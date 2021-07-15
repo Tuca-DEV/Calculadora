@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilocalc.css">
+</head>
+<body onload = 'carreg()'>
+    <header>
+        <h1> Calculadora Web </h1>
+    </header>
+
+    <section>
+        <div id = 'vis'>
+            
+        </div>
+        <p> </p>
+        <div>
+            <input type="button" value="7" onclick = 'cliSet()'><input type="button" value="8" onclick = 'cliOit()'><input type="button" value="9" onclick = 'cliNov()'> <input type="button" value="X" onclick = 'cliMul()'><input type="button" value="÷" onclick = 'cliDiv()'>
+        </div>
+        <div>
+            <input type="button" value="4" onclick = 'cliQua()'><input type="button" value="5" onclick = 'cliCin()'><input type="button" value="6" onclick = 'cliSei()'> <input type="button" value="-" onclick = 'cliMen()'><input type="button" value="√" onclick = 'cliRai()'>
+        </div>
+        <div>
+            <input type="button" value="1" onclick = 'cliUm()'><input type="button" value="2" onclick = 'cliDoi()'><input type="button" value="3" onclick = 'cliTre()'> <input type="button" value="+" onclick = 'cliMai()'><input type="button" value="%" onclick = 'cliRes()'>
+        </div>
+        <div>
+            <input id = 'zero' type="button" value="0" onclick = 'cliZer()'><input type="button" value="." onclick = 'cliPon()'> <input type="button" value="←" onclick = 'cliDel()'><input type="button" value="=" onclick = 'cliIgu()'>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;<i>TucaDEV</i></p>
+    </footer>
+
+    <script src="operac.js"></script>
+</body>
+</html>
